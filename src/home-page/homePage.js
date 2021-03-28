@@ -17,9 +17,9 @@ function HomePage() {
             <h3>Parent Component</h3>
             <button onClick={() => setShowChild(false)}>Hide Child</button>
             <button onClick={() => setShowChild(true)}>Load Child</button>
-            { showChild && 
-                <LinkedPage name= {childValue} handleChange = {setChildValue}></LinkedPage>
-            }
+            {/* { showChild && 
+                // <LinkedPage name= {childValue} handleChange = { }></LinkedPage>
+            } */}
             
         </Fragment>
     )

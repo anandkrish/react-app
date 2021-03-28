@@ -12,7 +12,11 @@ const Users = () => {
         }).catch(error => {
             console.log(error);
         })
-    },[])
+    },[]);
+
+    handleDetailsClick(user) {
+
+    }
 
    return (
        <div>
@@ -22,6 +26,7 @@ const Users = () => {
                    <div>
                      <span>{user.email}</span>
                      <span>{user.first_name}</span>
+                     <a href="#" onClick={this.handleDetailsClick}>User details</a>
                      </div>
            );
         })}
